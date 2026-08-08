@@ -1,0 +1,26 @@
+{
+  "name": "calcula-ingreso",
+  "private": true,
+  "version": "1.0.1",
+  "type": "module",
+  "scripts": {
+    "postinstall": "cp node_modules/sql.js/dist/sql-wasm.wasm node_modules/sql.js/dist/sql-wasm-browser.wasm public/",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ionic/vue": "^8.0.0",
+    "@ionic/vue-router": "^8.0.0",
+    "idb-keyval": "^6.2.1",
+    "ionicons": "^7.0.0",
+    "sql.js": "^1.11.0",
+    "vue": "^3.4.29",
+    "vue-router": "^4.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "vite": "^5.3.1",
+    "vite-plugin-pwa": "^0.20.0"
+  }
+}
