@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overscroll-behavior-x: none;
+}
+
+ion-content {
+  --background: var(--color-bg-page);
+  --padding-top: 20px;
+}
+
+ion-title {
+  font-weight: 700;
+}
+
+#app {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  #app {
+    max-width: 720px;
+  }
+}
+
+.card-item {
+  background: var(--color-bg-card);
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  padding: 12px;
+  margin-bottom: 8px;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  color: var(--color-text-secondary);
+  text-align: center;
+}
+
+.empty-state ion-icon {
+  font-size: 48px;
+  color: var(--color-text-disabled);
+  margin-bottom: 12px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-bg-card);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.data-table th,
+.data-table td {
+  padding: 10px 8px;
+  text-align: left;
+  font-size: 13px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.data-table th {
+  background: var(--color-bg-input);
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.data-table tbody tr {
+  cursor: pointer;
+}
+
+.data-table tbody tr.selected {
+  background: rgba(var(--ion-color-primary-rgb), 0.08);
+  box-shadow: inset 3px 0 0 var(--ion-color-primary);
+}
+
+.data-table tbody tr:active {
+  background: var(--color-bg-input);
+}
+
+.table-scroll {
+  width: 100%;
+  overflow-x: auto;
+  padding: 0 12px 12px;
+}
+
+.form-field {
+  margin: 0 12px 16px;
+}
+
+.form-field label {
+  display: block;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin-bottom: 6px;
+}
+
+.form-field ion-input,
+.form-field ion-select,
+.form-field ion-datetime-button {
+  --background: var(--color-bg-input);
+  --padding-start: 12px;
+  --padding-end: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+}
+
+.select-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: var(--color-bg-input);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 15px;
+  font-family: inherit;
+  color: var(--color-text-primary);
+  cursor: pointer;
+}
+
+.select-trigger span.placeholder {
+  color: var(--color-text-disabled);
+}
+
+.select-trigger ion-icon {
+  color: var(--color-text-secondary);
+  font-size: 16px;
+}
+
+.btn-primary {
+  --border-radius: 10px;
+  font-weight: 600;
+}
+
+.section-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.section-total span:last-child {
+  color: var(--ion-color-success);
+}
+
+.delete-btn {
+  --color: var(--ion-color-danger);
+  color: var(--ion-color-danger);
+}
